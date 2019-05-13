@@ -1,64 +1,75 @@
 /* #*/ export const PERSON = `
 name:
-  first: John
-  middle:
-  last: Doe
+  first: Antoine
+  last: Teuf
 about: Hi, my name is John Doe. I"m just about the most boring type of person you could
        possibly imagine. I like collecting leaves from the tree in my back yard and documenting
        each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
-position: Software Developer
+position: Développeur Full Stack
 
 birth:
-  year: 1990
-  location: New York
+  date: 23 octobre 1990
+  location: Versailles (France)
 
 experience:
-- company: Company A
-  position: Developer
-  timeperiod: since January 2016
-  description: Programming and watching cute cat videos.
-  website: https://example.com
+- company: OCTO Technology
+  position: Consultant
+  timeperiod: Septembre 2017 - Septembre 2019
+  description: Développement pour Renault, BNP Paribas et le Ministère de l'Intérieur
 
-- company: Company B
-  position: Frontend Developer
-  timeperiod: January 2015 - December 2015
-  description: Fulfillment of extremely important tasks.
+- company: Orchestra
+  position: Ingénieur développement Java EE
+  timeperiod: Avril 2017 - Mai 2017
+  description: Évolutions et résolutions d'anomalies de la plateforme de vente de voyages
 
-- company: Company C
-  position: Trainee
-  timeperiod: March 2014 - December 2014
-  description: Making coffee and baking cookies.
+- company: Ubisoft Paris Mobile
+  position: Gameplay Programmer
+  timeperiod: Avril 2015 - Mars 2017
+  description: Développement du jeu Smurfs Epic Run sur iOS/Android/AppleTV
 
 education:
-- degree: Master of Arts
-  timeperiod: March 2012 - December 2013
-  description: Major in Hacking and Computer Penetration, University A, New York, USA.
-  website: https://example.com
+- degree: Certification Software Craftsmanship
+  timeperiod: 2018
+  description: Pratiques du développement logiciel de qualité
+  website: https://www.octo.academy/fr/parcours-formations/1-pratiques-du-developpement-logiciel-de-qualite
 
-- degree: Bachelor of Science
-  timeperiod: March 2009 - December 2011
-  description: Major in Engineering, University B, Los Angeles, USA.
+- degree: Master Jeux et Média Interactifs Numériques
+  timeperiod: 2013 - 2015
+  description: Ecole Nationale du Jeu et des Médias Intéractifs Numériques
+  website: http://www.enjmin.fr/
 
-# skill level goes 0 to 100
-skills:
-- name: HTML5
-  level: 99
-- name: CSS3
-  level: 95
-- name: JavaScript
-  level: 97
-- name: Node.js
-  level: 93
-- name: Angular 2
-  level: 60
-- name: TypeScript
-  level: 80
-- name: ES.Next
-  level: 70
-- name: Docker
-  level: 99
-knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
-  (English and Klingon).
+- degree: Bachelor of Software Development
+  timeperiod: 2012 - 2013
+  description: Institute of Technology of Carlow
+
+- degree: DUT Informatique
+  timeperiod: 2010 - 2012
+  description: Institut Technologique du Havre
+
+skillcategories:
+  - skills:
+    - name: WebDev
+    - name: GameDev
+  - skills:
+    - name: TDD
+    - name: DDD
+    - name: Pair/Mob prog
+  - skills:
+    - name: Java
+    - name: JavaScript
+    - name: C#
+  - skills:
+    - name: Spring
+    - name: node.js
+    - name: Angular
+    - name: Unity
+  - skills:
+    - name: PostgreSQL
+    - name: Cassandra
+  - skills:
+    - name: Docker
+    - name: Kubernetes
+    - name: GitLab-CI
 
 projects:
 - name: best-resume-ever
@@ -81,12 +92,11 @@ contributions:
   url: https://github.com/salomonelli/best-resume-ever
 
 contact:
-  email: john.doe@email.com
-  phone: 0123 456789
-  street: 1234 Broadway
-  city: New York
-  website: johndoe.com
-  github: johnyD
-# en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
-lang: en
+  email: antoine.teuf@gmail.com
+  phone: 06 62 06 67 78
+  street: 31, rue de Montreuil
+  city: Vincennes (94)
+  linkedin: antoineteuf
+  github: teuteuf
+lang: fr
 `

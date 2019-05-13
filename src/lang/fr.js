@@ -1,7 +1,7 @@
 // French
 const lang = {
     contact: 'Contact',
-    born: 'Né en',
+    born: 'Né le',
     bornIn: 'à',
     experience: 'Expérience professionelle',
     education: 'Formation',
