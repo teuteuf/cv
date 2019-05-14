@@ -7,15 +7,20 @@ about: Hi, my name is John Doe. I"m just about the most boring type of person yo
        each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
 position: Développeur Full Stack
 
-birth:
-  date: 23 octobre 1990
-  location: Versailles (France)
-
 experience:
 - company: OCTO Technology
-  position: Consultant
+  position: Consultant / Développeur Fullstack
   timeperiod: Septembre 2017 - Septembre 2019
-  description: Développement pour Renault, BNP Paribas et le Ministère de l'Intérieur
+  mission:
+    - client: Ministère de l'Intérieur
+      missiondescription: POC outil de gestion des opérations du 18-112
+      missiontechno: JavaScript, Node.js, hapi, Angular, Python, PuLP, GitLab CI, Docker
+    - client: BNP Paribas
+      missiondescription: Refonte système de gestion des mouvements financiers
+      missiontechno: Java, Spring, Cassandra, Flink, GitLab CI, Docker, Kubernetes
+    - client: Renault
+      missiondescription: Calculateur d'émission de CO2 des véhicules
+      missiontechno: Java, Spring, JavaScript, jQuery, Oracle DB
 
 - company: Orchestra
   position: Ingénieur développement Java EE
@@ -89,8 +94,6 @@ hobbies:
 contact:
   email: antoine.teuf@gmail.com
   phone: 06 62 06 67 78
-  street: 31, rue de Montreuil
-  city: Vincennes (94)
   linkedin: antoineteuf
   github: teuteuf
 lang: fr

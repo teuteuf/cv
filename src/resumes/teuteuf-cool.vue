@@ -3,46 +3,10 @@
     <div class="banner">
       <div class="banner__fullname">{{ person.name.first }} {{ person.name.last }}</div>
       <div class="banner__position">{{ person.position }}</div>
-      <div class="banner__location">{{ lang.born }} {{person.birth.date}}</div>
     </div>
 
     <div class="content">
       <div class="content__left">
-        <div class="section">
-          <div class="section-headline">
-            {{ lang.about }}
-          </div>
-
-          <div class="section-content section-content--plain">
-            {{ person.about }}
-            <br/>
-            <br/>
-            {{ person.knowledge }}
-          </div>
-        </div>
-
-        <div
-          v-if="person.skillcategories"
-          class="section">
-          <div class="section-headline">
-            {{ lang.skills }}
-          </div>
-
-          <div 
-            v-for="(skillcategory, index) in person.skillcategories"
-            class="section-content-grid"
-          >
-            <a
-              v-for="(skill, index) in skillcategory.skills"
-              class="grid-item"
-              :key="index"
-              :href="skill.url">
-              <span class="squarred-grid-item">
-                {{ skill.name }}
-              </span>
-            </a>
-          </div>
-        </div>
 
         <div class="section">
           <div class="section-headline">
@@ -50,9 +14,6 @@
           </div>
 
           <div class="section-content section-content--plain">
-            <div class="section-link">
-              <i class="section-link__icon material-icons">business</i>{{ person.contact.city }}
-            </div>
 
             <a
               class="section-link"
@@ -93,6 +54,43 @@
             </a>
           </div>
         </div>
+
+        <div
+          v-if="person.skillcategories"
+          class="section">
+          <div class="section-headline">
+            {{ lang.skills }}
+          </div>
+
+          <div 
+            v-for="(skillcategory, categoryindex) in person.skillcategories"
+            class="section-content-grid"
+            :key="categoryindex"
+          >
+            <a
+              v-for="(skill, skillindex) in skillcategory.skills"
+              class="grid-item"
+              :key="skillindex"
+              :href="skill.url">
+              <span class="squarred-grid-item">
+                {{ skill.name }}
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-headline">
+            {{ lang.about }}
+          </div>
+
+          <div class="section-content section-content--plain">
+            {{ person.about }}
+            <br/>
+            <br/>
+            {{ person.knowledge }}
+          </div>
+        </div>
       </div>
 
       <div class="content__right">
@@ -116,6 +114,19 @@
 
               <div class="section-content__text">{{ experience.timeperiod }}</div>
               <span class="section-content__text--light">{{ experience.description }}</span>
+
+              <div
+                v-for="(mission, missionindex) in experience.mission"
+                :key="missionindex"
+                class="section-subcontent"
+              >
+                <span class="section-content__text">
+                  {{ mission.client }} : {{ mission.missiondescription }}
+                </span>
+                <div class="section-subcontent__text--light">
+                  {{ mission.missiontechno }}
+                </div>
+              </div>
             </a>
           </div>
         </div>
@@ -218,9 +229,9 @@ export default Vue.component(name, getVueOptions(name));
 </script>
 
 <style lang="less" scoped>
-@accent-color: #34495E;
-@banner-color: #42b883;
-@banner-height: 120px;
+@accent-color: #706f6f;
+@banner-color: #b0b5b3;
+@banner-height: 80px;
 @picture-size: 120px;
 @picture-offset: 35px;
 @base-padding: 30px;
@@ -387,6 +398,22 @@ a {
   justify-content: center;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.section-subcontent {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 5px;
+
+  &__text {
+    display: block;
+    font-size: 12px;
+
+    &--light {
+      font-size: 10px;
+      font-style: italic;
+    }
+  }
 }
 
 .grid-item {
