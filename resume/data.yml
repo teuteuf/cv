@@ -72,24 +72,19 @@ skillcategories:
     - name: GitLab-CI
 
 projects:
-- name: best-resume-ever
-  platform: Vue
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
-  url: https://github.com/salomonelli/best-resume-ever
+  - name: Spot The Defuser
+    platform: Unity
+    description: Jeu multi-joueurs en réseau local développé avec Unity en TDD
+    url: https://github.com/teuteuf/spot-the-defuser
+
 
 hobbies:
-- name: Video Games
-  iconClass: fa fa-gamepad
-  url: https://example.com
-
-- name: Drawing
-  iconClass: fa fa-pencil
-  url: https://example.com
-
-contributions:
-- name: best-resume-ever
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
-  url: https://github.com/salomonelli/best-resume-ever
+- name: Séries TV
+  description: Doctor Who, Firefly, Stranger Things
+- name: Cinéma
+  description: Le Prestige, Premier Contact
+- name: Jeux
+  description: Jeux vidéo indés, Jeux de société, Escape Games
 
 contact:
   email: antoine.teuf@gmail.com

@@ -159,6 +159,28 @@
         </div>
 
         <div
+          v-if="person.hobbies"
+          class="section">
+          <div class="section-headline">
+            <i class="section-headline__icon fa fa-heart"></i>{{lang.hobbies}}
+          </div>
+
+          <div class="section-content-grid">
+            <a
+              v-for="(hobbie, index) in person.hobbies"
+              class="section-content__item-grid"
+              :key="index"
+              :href="hobbie.url">
+              <span class="section-content__header"> {{ hobbie.name }} </span>
+              <span class="section-content__text"> {{ hobbie.description }} </span>
+              <span class="section-content__text--light" style="word-break: break-all;">
+                {{ hobbie.url }}
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div
           v-if="person.contributions"
           class="section">
           <div class="section-headline">
