@@ -120,7 +120,7 @@
                 :key="missionindex"
                 class="section-subcontent"
               >
-                <span class="section-content__text">
+                <span class="section-subcontent__header">
                   {{ mission.client }} : {{ mission.missiondescription }}
                 </span>
                 <div class="section-subcontent__text--light">
@@ -143,9 +143,9 @@
               :key="index"
               :href="education.website">
 
-              <span class="section-content__header"> {{ education.school }} </span>
-              <span class="section-content__subheader">{{ education.degree }}</span>
-              <span class="section-content__text"> {{ education.timeperiod }} </span>
+              <span class="section-content__header">{{ education.degree }}</span>
+              <span class="section-content__subheader"> {{ education.timeperiod }} </span>
+              <span class="section-content__text"> {{ education.school }} </span>
               <span class="section-content__text--light"> {{ education.description }} </span>
             </a>
           </div>
@@ -158,9 +158,9 @@
             <i class="section-headline__icon material-icons">code</i>{{ lang.projects }}
           </div>
 
-          <div class="section-content-grid">
+          <div class="section-content">
             <a v-for="(project, index) in person.projects" :key="index"
-              class="section-content__item-grid"
+              class="section-content__item"
               :href="project.url">
               <span class="section-content__header"> {{ project.name }} </span>
               <span class="section-content__subheader">{{ project.platform }}</span>
@@ -176,10 +176,10 @@
             <i class="section-headline__icon fa fa-heart"></i>{{lang.hobbies}}
           </div>
 
-          <div class="section-content-grid">
+          <div class="section-content">
             <a
               v-for="(hobbie, index) in person.hobbies"
-              class="section-content__item-grid"
+              class="section-content__item"
               :key="index"
               :href="hobbie.url">
               <span class="section-content__header"> {{ hobbie.name }} </span>
@@ -229,8 +229,8 @@ export default Vue.component(name, getVueOptions(name));
 </script>
 
 <style lang="less" scoped>
-@accent-color: #706f6f;
-@banner-color: #b0b5b3;
+@accent-color: #0b2027;
+@banner-color: #40798c;
 @banner-height: 80px;
 @picture-size: 120px;
 @picture-offset: 35px;
@@ -318,7 +318,7 @@ a {
 }
 
 .section {
-  margin: 20px 0;
+  margin: 20px 0 40px 0;
 }
 
 .section-link,
@@ -352,7 +352,7 @@ a {
 
   &__item {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   &__header {
@@ -401,16 +401,20 @@ a {
 }
 
 .section-subcontent {
-  margin-top: 2px;
-  margin-bottom: 2px;
-  margin-left: 5px;
+  margin: 10px 0 10px 10px;
+
+  &__header {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+  }
 
   &__text {
     display: block;
     font-size: 12px;
 
     &--light {
-      font-size: 10px;
+      font-size: 12px;
       font-style: italic;
     }
   }

@@ -25,7 +25,7 @@ experience:
 - company: Orchestra
   position: Ingénieur développement Java EE
   timeperiod: Avril 2017 - Mai 2017
-  description: Évolutions et résolutions d'anomalies de la plateforme de vente de voyages
+  description: Évolutions et résolutions d'anomalies du module Réservation de la plateforme de vente de voyages
 
 - company: Ubisoft Paris Mobile
   position: Gameplay Programmer
@@ -35,7 +35,7 @@ experience:
 education:
 - degree: Certification Software Craftsmanship
   timeperiod: 2018
-  description: Pratiques du développement logiciel de qualité
+  description: Pratiques du développement logiciel de qualité - OCTO
   website: https://www.octo.academy/fr/parcours-formations/1-pratiques-du-developpement-logiciel-de-qualite
 
 - degree: Master Jeux et Média Interactifs Numériques
@@ -45,7 +45,7 @@ education:
 
 - degree: Bachelor of Software Development
   timeperiod: 2012 - 2013
-  description: Institute of Technology of Carlow
+  description: Institute of Technology Carlow (Irlande)
 
 - degree: DUT Informatique
   timeperiod: 2010 - 2012
@@ -76,20 +76,15 @@ skillcategories:
     - name: Kubernetes
     - name: GitLab-CI
 
-projects:
-  - name: Spot The Defuser
-    platform: Unity
-    description: Jeu multi-joueurs en réseau local développé avec Unity en TDD
-    url: https://github.com/teuteuf/spot-the-defuser
-
-
 hobbies:
 - name: Séries TV
-  description: Doctor Who, Firefly, Stranger Things
+  description: Doctor Who, Firefly, Steven Universe, The OA
 - name: Cinéma
-  description: Le Prestige, Premier Contact
-- name: Jeux
-  description: Jeux vidéo indés, Jeux de société, Escape Games
+  description: 'Premier Contact, Interstellar, Spider-Man: New Generation'
+- name: Jeux Vidéo
+  description: Cultist Simulator, TIS-100, Tetris, Subterfuge
+- name: Jeux de Société
+  description: Unlock, Pandemic Legacy, Les Montagnes Hallucinées, Skulls
 
 contact:
   email: antoine.teuf@gmail.com
