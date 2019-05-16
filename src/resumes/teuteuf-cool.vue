@@ -55,6 +55,19 @@
           </div>
         </div>
 
+        <div class="section">
+          <div class="section-headline">
+            {{ lang.about }}
+          </div>
+
+          <div class="section-content section-content--plain section-content--justify">
+            {{ person.about }}
+            <br/>
+            <br/>
+            {{ person.knowledge }}
+          </div>
+        </div>
+
         <div
           v-if="person.skillcategories"
           class="section">
@@ -79,18 +92,6 @@
           </div>
         </div>
 
-        <div class="section">
-          <div class="section-headline">
-            {{ lang.about }}
-          </div>
-
-          <div class="section-content section-content--plain">
-            {{ person.about }}
-            <br/>
-            <br/>
-            {{ person.knowledge }}
-          </div>
-        </div>
       </div>
 
       <div class="content__right">
@@ -389,6 +390,10 @@ a {
 
   &--plain {
     padding: 0;
+  }
+
+  &--justify {
+    text-align: justify;
   }
 }
 
