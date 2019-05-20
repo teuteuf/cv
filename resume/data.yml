@@ -15,7 +15,7 @@ experience:
   timeperiod: Septembre 2017 - Septembre 2019
   mission:
     - client: Ministère de l'Intérieur
-      missiondescription: POC outil de gestion des opérations du 18-112
+      missiondescription: Système gestion des opérations des Pompiers
       missiontechno: JavaScript, Node.js, hapi, Angular, Python, PuLP, GitLab CI, Docker
     - client: BNP Paribas
       missiondescription: Refonte système de gestion des mouvements financiers
