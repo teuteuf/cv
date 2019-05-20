@@ -1,45 +1,12 @@
 <template>
   <div class="resume">
     <div class="banner">
-      <div class="banner__fullname">{{ person.name.first }} {{ person.name.middle }} {{ person.name.last }}</div>
+      <div class="banner__fullname">{{ person.name.first }} {{ person.name.last }}</div>
       <div class="banner__position">{{ person.position }}</div>
-      <div class="banner__location">{{ lang.born }} {{person.birth.year}} {{ lang.bornIn }} {{person.birth.location}}</div>
     </div>
 
     <div class="content">
       <div class="content__left">
-        <div class="section">
-          <div class="section-headline">
-            {{ lang.about }}
-          </div>
-
-          <div class="section-content section-content--plain">
-            {{ person.about }}
-            <br/>
-            <br/>
-            {{ person.knowledge }}
-          </div>
-        </div>
-
-        <div
-          v-if="person.skills"
-          class="section">
-          <div class="section-headline">
-            {{ lang.skills }}
-          </div>
-
-          <div class="section-content-grid">
-            <a
-              v-for="(skill, index) in person.skills"
-              class="grid-item"
-              :key="index"
-              :href="skill.url">
-              <span class="squarred-grid-item">
-                {{ skill.name }}
-              </span>
-            </a>
-          </div>
-        </div>
 
         <div class="section">
           <div class="section-headline">
@@ -47,9 +14,6 @@
           </div>
 
           <div class="section-content section-content--plain">
-            <div class="section-link">
-              <i class="section-link__icon material-icons">business</i>{{ person.contact.street }}
-            </div>
 
             <a
               class="section-link"
@@ -90,6 +54,44 @@
             </a>
           </div>
         </div>
+
+        <div class="section">
+          <div class="section-headline">
+            {{ lang.about }}
+          </div>
+
+          <div class="section-content section-content--plain section-content--justify">
+            {{ person.about }}
+            <br/>
+            <br/>
+            {{ person.knowledge }}
+          </div>
+        </div>
+
+        <div
+          v-if="person.skillcategories"
+          class="section">
+          <div class="section-headline">
+            {{ lang.skills }}
+          </div>
+
+          <div 
+            v-for="(skillcategory, categoryindex) in person.skillcategories"
+            class="section-content-grid"
+            :key="categoryindex"
+          >
+            <a
+              v-for="(skill, skillindex) in skillcategory.skills"
+              class="grid-item"
+              :key="skillindex"
+              :href="skill.url">
+              <span class="squarred-grid-item">
+                {{ skill.name }}
+              </span>
+            </a>
+          </div>
+        </div>
+
       </div>
 
       <div class="content__right">
@@ -113,6 +115,19 @@
 
               <div class="section-content__text">{{ experience.timeperiod }}</div>
               <span class="section-content__text--light">{{ experience.description }}</span>
+
+              <div
+                v-for="(mission, missionindex) in experience.mission"
+                :key="missionindex"
+                class="section-subcontent"
+              >
+                <span class="section-subcontent__header">
+                  {{ mission.client }} : {{ mission.missiondescription }}
+                </span>
+                <div class="section-subcontent__text--light">
+                  {{ mission.missiontechno }}
+                </div>
+              </div>
             </a>
           </div>
         </div>
@@ -129,9 +144,9 @@
               :key="index"
               :href="education.website">
 
-              <span class="section-content__header"> {{ education.school }} </span>
-              <span class="section-content__subheader">{{ education.degree }}</span>
-              <span class="section-content__text"> {{ education.timeperiod }} </span>
+              <span class="section-content__header">{{ education.degree }}</span>
+              <span class="section-content__subheader"> {{ education.timeperiod }} </span>
+              <span class="section-content__text"> {{ education.school }} </span>
               <span class="section-content__text--light"> {{ education.description }} </span>
             </a>
           </div>
@@ -144,13 +159,35 @@
             <i class="section-headline__icon material-icons">code</i>{{ lang.projects }}
           </div>
 
-          <div class="section-content-grid">
+          <div class="section-content">
             <a v-for="(project, index) in person.projects" :key="index"
-              class="section-content__item-grid"
+              class="section-content__item"
               :href="project.url">
               <span class="section-content__header"> {{ project.name }} </span>
               <span class="section-content__subheader">{{ project.platform }}</span>
               <span class="section-content__text"> {{ project.description }} </span>
+            </a>
+          </div>
+        </div>
+
+        <div
+          v-if="person.hobbies"
+          class="section">
+          <div class="section-headline">
+            <i class="section-headline__icon fa fa-heart"></i>{{lang.hobbies}}
+          </div>
+
+          <div class="section-content">
+            <a
+              v-for="(hobbie, index) in person.hobbies"
+              class="section-content__item"
+              :key="index"
+              :href="hobbie.url">
+              <span class="section-content__header"> {{ hobbie.name }} </span>
+              <span class="section-content__text"> {{ hobbie.description }} </span>
+              <span class="section-content__text--light" style="word-break: break-all;">
+                {{ hobbie.url }}
+              </span>
             </a>
           </div>
         </div>
@@ -187,15 +224,15 @@
 import Vue from 'vue';
 import { getVueOptions } from './options';
 
-const name = 'cool';
+const name = 'teuteuf-cool-printer-friendly';
 
 export default Vue.component(name, getVueOptions(name));
 </script>
 
 <style lang="less" scoped>
-@accent-color: #34495E;
-@banner-color: #42b883;
-@banner-height: 120px;
+@accent-color: #0b2027;
+@banner-color: #0b2027;
+@banner-height: 80px;
 @picture-size: 120px;
 @picture-offset: 35px;
 @base-padding: 30px;
@@ -224,7 +261,7 @@ a {
   height: @picture-size;
   width: @picture-size;
   border-radius: 50%;
-  border: 5px solid @accent-color;
+  border: 5px solid @banner-color;
   content: url('../../resume/id.jpg');
   z-index: 2;
 }
@@ -233,13 +270,14 @@ a {
   width: calc(100% - @base-padding * 2);
   height: @banner-height;
   padding: @base-padding;
-  background-color: @banner-color;
+  background-color: white;
+  border-bottom: solid @banner-color 5px;
   /*
     background-image: url('../../resume/banner.png');
     background-repeat: no-repeat;
     background-size: cover;
   */
-  color: white;
+  color: @accent-color;
 
   &__fullname {
     font-size: 32px;
@@ -250,6 +288,7 @@ a {
   }
 
   &__location {
+    margin-top: 5px;
     font-size: 12px;
   }
 }
@@ -267,11 +306,12 @@ a {
 
   &__left {
     width: @left-column-width;
-    color: rgba(255, 255, 255, 0.59);
-    background-color: @accent-color;
+    color: black;
+    background-color: white;
+    border-right: solid @banner-color 5px;
 
     .section-headline {
-      color: white;
+      color: black;
     }
   }
 
@@ -281,14 +321,14 @@ a {
 }
 
 .section {
-  margin: 20px 0;
+  margin: 20px 0 40px 0;
 }
 
 .section-link,
 .section-headline {
   display: flex !important;
   align-items: center;
-  color: @accent-color;
+  color: black;
   display: inline-block;
   font-size: 1.2em;
   margin: 8px 0;
@@ -301,10 +341,10 @@ a {
 
 .section-link {
   font-size: 1.1em;
-  color: rgba(255, 255, 255, 0.59) !important;
+  color: black !important;
 
   &__icon {
-    color: white;
+    color: black;
   }
 }
 
@@ -315,7 +355,7 @@ a {
 
   &__item {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   &__header {
@@ -353,13 +393,38 @@ a {
   &--plain {
     padding: 0;
   }
+
+  &--justify {
+    text-align: justify;
+  }
 }
 
 .section-content-grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.section-subcontent {
+  margin: 10px 0 10px 10px;
+
+  &__header {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  &__text {
+    display: block;
+    font-size: 12px;
+
+    &--light {
+      font-size: 12px;
+      font-style: italic;
+    }
+  }
 }
 
 .grid-item {
@@ -368,8 +433,8 @@ a {
 
 .squarred-grid-item {
   display: block;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid @accent-color;
+  color: black;
   margin-top: 5px;
   padding: 5px;
 }

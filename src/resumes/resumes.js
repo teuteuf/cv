@@ -9,3 +9,4 @@
 // import './creative.vue';
 // import './cool.vue';
 import './teuteuf-cool.vue';
+import './teuteuf-cool-printer-friendly.vue';
