@@ -16,7 +16,7 @@ experience:
   mission:
     - client: Ministère de l'Intérieur
       missiondescription: Système gestion des opérations des pompiers
-      missiontechno: JavaScript, Node.js, hapi, Angular, Python, PuLP, GitLab CI, Docker
+      missiontechno: TypeScript, Node.js, hapi, Angular, Python, PuLP, GitLab CI, Docker
     - client: BNP Paribas
       missiondescription: Refonte système de gestion des mouvements financiers
       missiontechno: Java, Spring, Cassandra, Flink, GitLab CI, Docker, Kubernetes
@@ -63,7 +63,7 @@ skillcategories:
     - name: Pair/Mob prog
   - skills:
     - name: Java
-    - name: JavaScript
+    - name: JavaScript/TypeScript
     - name: C#
   - skills:
     - name: Spring
