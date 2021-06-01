@@ -75,7 +75,7 @@
             {{ lang.skills }}
           </div>
 
-          <div 
+          <div
             v-for="(skillcategory, categoryindex) in person.skillcategories"
             class="section-content-grid"
             :key="categoryindex"
@@ -115,6 +115,7 @@
 
               <div class="section-content__text">{{ experience.timeperiod }}</div>
               <span class="section-content__text--light">{{ experience.description }}</span>
+              <div class="section-subcontent__text--light">{{ experience.techno }}</div>
 
               <div
                 v-for="(mission, missionindex) in experience.mission"
@@ -183,11 +184,7 @@
               class="section-content__item"
               :key="index"
               :href="hobbie.url">
-              <span class="section-content__header"> {{ hobbie.name }} </span>
-              <span class="section-content__text"> {{ hobbie.description }} </span>
-              <span class="section-content__text--light" style="word-break: break-all;">
-                {{ hobbie.url }}
-              </span>
+              <span class="section-content__header">{{ hobbie.name }} - <span class="section-content__headerlabel">{{ hobbie.description }}</span></span>
             </a>
           </div>
         </div>
@@ -321,7 +318,7 @@ a {
 }
 
 .section {
-  margin: 20px 0 40px 0;
+  margin: 10px 0 15px 0;
 }
 
 .section-link,
@@ -364,6 +361,11 @@ a {
     font-weight: 500;
   }
 
+  &__headerlabel {
+    font-size: 0.8em;
+    font-weight: normal;
+  }
+
   &__subheader {
     display: block;
     font-weight: 400;
@@ -376,6 +378,8 @@ a {
 
     &--light {
       font-size: 12px;
+      white-space: pre-line;
+      margin: 0.5em 0;
     }
   }
 

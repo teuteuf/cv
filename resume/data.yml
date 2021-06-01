@@ -2,14 +2,18 @@
 name:
   first: Antoine
   last: Teuf
-about: Bonjour ! Je suis actuellement à la recherche d'un poste de développeur à Montpellier
-       et serai disponible à partir du mois de septembre. J'aime coder, apprendre plein de
-       nouvelles choses et chercher à améliorer mes pratiques de développement ! A part ça,
-       j'aime bien faire de la pâtisserie, mes collègues raffolent généralement de mes cakes
-       et choux à la crème !
+about: Bonjour ! J'aime coder, apprendre plein de nouvelles choses et chercher à améliorer
+       mes pratiques de développement !
+       A part ça, j'aime bien faire de la pâtisserie, mes collègues raffolent généralement
+       de mes cakes et choux à la crème !
 position: Développeur Full Stack
 
 experience:
+- company: CodinGame
+  position: Ingénieur R&D en Informatique
+  timeperiod: Octobre 2019 - Maintenant
+  description: Implémentations de nouvelles fonctionnalités et améliorations pour les plateformes CodinGame, CodinGame For Work et CodingEscape
+  techno: TypeScript, React, Express, TypeORM, GraphQL, Java, MyBatis, Guice, GitLab
 - company: OCTO Technology
   position: Consultant / Développeur Fullstack
   timeperiod: Septembre 2017 - Septembre 2019
@@ -55,38 +59,40 @@ education:
 
 skillcategories:
   - skills:
-    - name: WebDev
-    - name: GameDev
-  - skills:
-    - name: TDD
-    - name: DDD
-    - name: Pair/Mob prog
-  - skills:
     - name: Java
-    - name: JavaScript/TypeScript
+    - name: JS / TS
     - name: C#
   - skills:
-    - name: Spring
-    - name: node.js
+    - name: React
     - name: Angular
+  - skills:
+    - name: Express.js
+    - name: Spring
     - name: Unity
+  - skills:
+    - name: TypeORM
+    - name: MyBatis
   - skills:
     - name: PostgreSQL
     - name: Cassandra
   - skills:
+    - name: GitLab
     - name: Docker
     - name: Kubernetes
-    - name: GitLab-CI
+  - skills:
+    - name: TDD
+    - name: Pair/Mob prog
+    - name: DDD
 
 hobbies:
-- name: Séries TV
-  description: Doctor Who, Firefly, Steven Universe, The OA
-- name: Cinéma
-  description: 'Premier Contact, Interstellar, Spider-Man: New Generation'
+- name: Patisseries
+  description: Macarons, Choux à la crème, Marbré
+- name: Livres
+  description: Dark Matter, La Passe Miroir, The Midnight Library
 - name: Jeux Vidéo
-  description: Cultist Simulator, TIS-100, Tetris, Subterfuge
+  description: Mario Kart, Tetris, Spaceteam, Outer Wilds
 - name: Jeux de Société
-  description: Unlock, Pandemic Legacy, Les Montagnes Hallucinées, Skulls
+  description: Unlock, Mysterium, The Crew, Dominion
 
 contact:
   email: antoine.teuf@gmail.com
