@@ -5,15 +5,22 @@ name:
 about: Bonjour ! J'aime coder, apprendre plein de nouvelles choses et chercher à améliorer
        mes pratiques de développement !
        A part ça, j'aime bien faire de la pâtisserie, mes collègues raffolent généralement
-       de mes cakes et choux à la crème !
-position: Développeur Full Stack
+       de mes brioches aux pralines et choux à la crème !
+position: Senior Software Engineer
 
 experience:
+- company: GoJob
+  position: Senior Software Engineer
+  timeperiod: Novembre 2021 - Janvier 2022
+  description: Développement de l'import automatique des relevés d'heures d'intérimaires, bugfix & support
+  techno: TypeScript, NestJS, Graphql, Prisma, React, Jest, GCP, K8S, GitLab
+
 - company: CodinGame
   position: Ingénieur R&D en Informatique
   timeperiod: Octobre 2019 - Maintenant
   description: Implémentations de nouvelles fonctionnalités et améliorations pour les plateformes CodinGame, CodinGame For Work et CodingEscape
   techno: TypeScript, React, Express, TypeORM, GraphQL, Java, MyBatis, Guice, GitLab
+
 - company: OCTO Technology
   position: Consultant / Développeur Fullstack
   timeperiod: Septembre 2017 - Septembre 2019
@@ -27,11 +34,6 @@ experience:
     - client: Renault
       missiondescription: Calculateur d'émission de CO2 des véhicules
       missiontechno: Java, Spring, JavaScript, jQuery, Oracle DB
-
-- company: Orchestra
-  position: Ingénieur développement Java EE
-  timeperiod: Avril 2017 - Mai 2017
-  description: Évolutions et résolutions d'anomalies du module Réservation de la plateforme de vente de voyages
 
 - company: Ubisoft Paris Mobile
   position: Gameplay Programmer
@@ -59,22 +61,29 @@ education:
 
 skillcategories:
   - skills:
-    - name: Java
     - name: JS / TS
+    - name: Java
     - name: C#
   - skills:
     - name: React
-    - name: Angular
+    - name: HTML / CSS
   - skills:
     - name: Express.js
+    - name: NestJS
     - name: Spring
+  - skills:
     - name: Unity
+    - name: PixiJS
   - skills:
     - name: TypeORM
+    - name: Prisma
     - name: MyBatis
   - skills:
     - name: PostgreSQL
     - name: Cassandra
+  - skills:
+    - name: Jest
+    - name: JUnit
   - skills:
     - name: GitLab
     - name: Docker
