@@ -2,9 +2,9 @@
 name:
   first: Antoine
   last: Teuf
-about: Bonjour ! J'aime coder, apprendre plein de nouvelles choses et chercher à améliorer
-       mes pratiques de développement !
-       A part ça, j'aime bien faire de la pâtisserie, mes collègues raffolent généralement
+about: Bonjour ! J'aime coder, continuer d'apprendre plein de nouvelles choses et toujours
+       chercher à améliorer mes pratiques de développement !
+       Je suis aussi pâtissier à mes heures perdues, mes collègues raffolent généralement
        de mes brioches aux pralines et choux à la crème !
 position: Senior Software Engineer
 
@@ -17,7 +17,7 @@ experience:
 
 - company: CodinGame
   position: Ingénieur R&D en Informatique
-  timeperiod: Octobre 2019 - Maintenant
+  timeperiod: Octobre 2019 - Septembre 2021
   description: Implémentations de nouvelles fonctionnalités et améliorations pour les plateformes CodinGame, CodinGame For Work et CodingEscape
   techno: TypeScript, React, Express, TypeORM, GraphQL, Java, MyBatis, Guice, GitLab
 
@@ -49,7 +49,7 @@ education:
 - degree: Master Jeux et Médias Interactifs Numériques
   timeperiod: 2013 - 2015
   description: Ecole Nationale du Jeu et des Médias Intéractifs Numériques
-  website: http://www.enjmin.fr/
+  website: https://enjmin.cnam.fr/
 
 - degree: Bachelor of Software Development
   timeperiod: 2012 - 2013
