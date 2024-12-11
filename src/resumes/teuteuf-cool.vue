@@ -54,15 +54,13 @@
             </a>
           </div>
         </div>
-
+        <br/>
         <div class="section">
           <div class="section-headline">
             {{ lang.about }}
           </div>
-
-          <div class="section-content section-content--plain section-content--justify">
-            {{ person.about }}
-            <br/>
+          <div class="section-content section-content--plain">
+            <span class="section-content__pre">{{ person.about }}</span>
             <br/>
             {{ person.knowledge }}
           </div>
@@ -107,14 +105,14 @@
               class="section-content__item"
               :href="experience.website">
 
-              <span class="section-content__header">{{ experience.position }}</span>
+              <span class="section-content__header section-content__listheader">{{ experience.position }}</span>
               <span class="section-content__subheader">
                 {{ experience.company }}
                 <span class="section-content__plain">{{ experience.location }}</span>
               </span>
 
               <div class="section-content__text">{{ experience.timeperiod }}</div>
-              <div class="section-content__text--light">{{ experience.description }}</div>
+              <div class="section-content__text--light section-content__pre">{{ experience.description }}</div>
               <div class="section-subcontent__text--light">{{ experience.techno }}</div>
 
               <div
@@ -132,8 +130,9 @@
             </a>
           </div>
         </div>
-
-        <div class="section">
+        <div
+          v-if="person.education"
+          class="section">
           <div class="section-headline">
             <i class="section-headline__icon material-icons">school</i>{{ lang.education }}
           </div>
@@ -143,30 +142,8 @@
               v-for="(education, index) in person.education"
               class="section-content__item"
               :key="index"
-              :href="education.website">
-
-              <span class="section-content__header">{{ education.degree }}</span>
-              <span class="section-content__subheader"> {{ education.timeperiod }} </span>
-              <span class="section-content__text"> {{ education.school }} </span>
-              <span class="section-content__text--light"> {{ education.description }} </span>
-            </a>
-          </div>
-        </div>
-
-        <div
-          v-if="person.projects"
-          class="section">
-          <div class="section-headline">
-            <i class="section-headline__icon material-icons">code</i>{{ lang.projects }}
-          </div>
-
-          <div class="section-content">
-            <a v-for="(project, index) in person.projects" :key="index"
-              class="section-content__item"
-              :href="project.url">
-              <span class="section-content__header"> {{ project.name }} </span>
-              <span class="section-content__subheader">{{ project.platform }}</span>
-              <span class="section-content__text"> {{ project.description }} </span>
+              :href="education.url">
+              <span class="section-content__header">{{ education.degree }} - <span class="section-content__headerlabel">{{ education.desc }}</span></span>
             </a>
           </div>
         </div>
@@ -185,28 +162,6 @@
               :key="index"
               :href="hobbie.url">
               <span class="section-content__header">{{ hobbie.name }} - <span class="section-content__headerlabel">{{ hobbie.description }}</span></span>
-            </a>
-          </div>
-        </div>
-
-        <div
-          v-if="person.contributions"
-          class="section">
-          <div class="section-headline">
-            <i class="section-headline__icon fa fa-heart"></i>{{lang.contributions}}
-          </div>
-
-          <div class="section-content-grid">
-            <a
-              v-for="(contribution, index) in person.contributions"
-              class="section-content__item-grid"
-              :key="index"
-              :href="contribution.url">
-              <span class="section-content__header"> {{ contribution.name }} </span>
-              <span class="section-content__text"> {{ contribution.description }} </span>
-              <span class="section-content__text--light" style="word-break: break-all;">
-                {{ contribution.url }}
-              </span>
             </a>
           </div>
         </div>
@@ -316,7 +271,7 @@ a {
 }
 
 .section {
-  margin: 10px 0 15px 0;
+  margin: 5px 0 10px 0;
 }
 
 .section-link,
@@ -348,15 +303,23 @@ a {
   padding-left: 32px;
   font-size: 14px;
 
+  &__pre {
+    white-space: pre-line;
+  }
+
   &__item {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   &__header {
     display: block;
     font-size: 1.1em;
     font-weight: 500;
+  }
+
+  &__listheader {
+    margin-top: 12px;
   }
 
   &__headerlabel {

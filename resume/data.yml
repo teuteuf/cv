@@ -2,27 +2,47 @@
 name:
   first: Antoine
   last: Teuf
-about: Bonjour ! J'aime coder, continuer d'apprendre plein de nouvelles choses et toujours
-       chercher à améliorer mes pratiques de développement !
-       Je suis aussi pâtissier à mes heures perdues, mes collègues raffolent généralement
-       de mes brioches aux pralines et choux à la crème !
-position: Senior Software Engineer
+about: | 
+  Développeur passionné par le développement web et le jeu vidéo, je combine près de 10 ans d'expérience dans ces deux domaines.
+  
+  J'ai eu l'opportunité de collaborer avec des entreprises de renom, telles que OCTO Technology, une ESN spécialisée dans les méthodes agiles et les bonnes pratiques de développement, Ubisoft, l'éditeur de jeux vidéo à l'international, ou encore folk, une startup développant le CRM de demain.
+  
+  Je serais ravi d'échanger avec vous sur votre projet. N'hésitez pas à me contacter !
+position: Senior Full Stack Developer
 
 experience:
-- company: GoJob
-  position: Senior Software Engineer
-  timeperiod: Novembre 2021 - Janvier 2022
-  description: Développement de l'import automatique des relevés d'heures d'intérimaires, bugfix & support
-  techno: TypeScript, NestJS, Graphql, Prisma, React, Jest, GCP, K8S, GitLab
+- company: Pink Bean Studio
+  position: Founder, Full Stack Developer, Game Developer, Freelance
+  timeperiod: Janvier 2022 - Aujourd'hui
+  description: |
+    Création du jeu web Worldle ayant atteint 3M de joueurs quotidiens
+    Création de Timeswipe.fun, jeu de trivia historique pour iOS, Android et Web
+    Réalisation de prototypes de jeux pour tester de nouveaux concepts
+  techno: TS, React, Capacitor, Tailwind, Cloudflare, Supabase, PostgreSQL, Godot
+
+- company: folk
+  position: Senior Full Stack Developer
+  timeperiod: Mars 2022 - Septembre 2023
+  description: |
+    Intégration Zapier & Imports contacts et mails depuis Microsoft Outlook
+    Système de templates pour faciliter la création de groupes de contacts
+    Ajout de pièces jointes et images dans les campagnes de mails
+    Vues publiques pour permettre le partage de listes de contacts
+    Refonte d'interfaces : Onboarding, Panneau de contact
+  techno: TS, React, NestJS, Graphql, PostgreSQL, Kafka, AWS, Terraform, GitLab CI
 
 - company: CodinGame
-  position: Ingénieur R&D en Informatique
+  position: Full Stack Developer
   timeperiod: Octobre 2019 - Septembre 2021
-  description: Implémentations de nouvelles fonctionnalités et améliorations pour les plateformes CodinGame, CodinGame For Work et CodingEscape
+  description: |
+    Refonte du système de souscription et amélioration de l'intégration Stripe
+    Développement d'escape-room virtuelles pour la plateforme CodingEscape
+    Mise en place connexion SAML sur la plateforme CodinGame For Work
+    Encadrement et formation de stagiaires
   techno: TypeScript, React, Express, TypeORM, GraphQL, Java, MyBatis, Guice, GitLab
 
 - company: OCTO Technology
-  position: Consultant / Développeur Fullstack
+  position: Full Stack Developer
   timeperiod: Septembre 2017 - Septembre 2019
   mission:
     - client: Ministère de l'Intérieur
@@ -42,71 +62,67 @@ experience:
 
 education:
 - degree: Certification Software Craftsmanship
-  timeperiod: 2018
-  description: Pratiques du développement logiciel de qualité - OCTO
+  desc: 2018, OCTO Technology
   website: https://www.octo.academy/fr/parcours-formations/1-pratiques-du-developpement-logiciel-de-qualite
 
-- degree: Master Jeux et Médias Interactifs Numériques
-  timeperiod: 2013 - 2015
-  description: Ecole Nationale du Jeu et des Médias Intéractifs Numériques
+- degree: Master Jeux et Media Numériques
+  desc: 2015, ENJMIN
   website: https://enjmin.cnam.fr/
 
-- degree: Bachelor of Software Development
-  timeperiod: 2012 - 2013
-  description: Institute of Technology Carlow (Irlande)
-
+- degree: BSc in Software Development
+  desc: 2013, IT Carlow (IE)
 - degree: DUT Informatique
-  timeperiod: 2010 - 2012
-  description: Institut Technologique du Havre
+  desc: 2012, IUT Le Havre
 
 skillcategories:
   - skills:
-    - name: JS / TS
-    - name: Java
-    - name: C#
+    - name: JavaScript
+    - name: TypeScript
   - skills:
-    - name: React
-    - name: HTML / CSS
-  - skills:
+    - name: node.js
     - name: Express.js
     - name: NestJS
-    - name: Spring
   - skills:
-    - name: Unity
-    - name: PixiJS
-  - skills:
-    - name: TypeORM
-    - name: Prisma
-    - name: MyBatis
+    - name: React
+    - name: Tailwind CSS
+    - name: Radix UI
   - skills:
     - name: PostgreSQL
-    - name: Cassandra
+    - name: Prisma
+    - name: TypeORM
+  - skills:
+    - name: GitLab CI
+    - name: Docker
+    - name: K8S
+    - name: AWS
   - skills:
     - name: Jest
-    - name: JUnit
+    - name: Testing Library
+    - name: Cypress
   - skills:
-    - name: GitLab
-    - name: Docker
-    - name: Kubernetes
+    - name: Java
+    - name: Spring Boot
+    - name: Gradle
   - skills:
     - name: TDD
     - name: Pair/Mob prog
     - name: DDD
+  - skills:
+    - name: Clean Archi
+    - name: Hexagonal Archi
+  - skills:
+    - name: Français
+    - name: Anglais
 
 hobbies:
-- name: Patisseries
-  description: Macarons, Choux à la crème, Marbré
 - name: Livres
-  description: Dark Matter, La Passe Miroir, The Midnight Library
-- name: Jeux Vidéo
-  description: Mario Kart, Tetris, Spaceteam, Outer Wilds
+  description: A Psalm for the Wild Built, Circé, The Queen's Gambit
 - name: Jeux de Société
-  description: Unlock, Mysterium, The Crew, Dominion
+  description: Échecs, Dominion, Trio, The Crew, Skull
 
 contact:
-  email: antoine.teuf@gmail.com
+  email: antoine@pinkbean.studio
   phone: 06 62 06 67 78
   linkedin: antoineteuf
-  github: teuteuf
 lang: fr
 `
