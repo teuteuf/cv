@@ -3,78 +3,76 @@ name:
   first: Antoine
   last: Teuf
 about: | 
-  Développeur full stack passionné par le développement d'applications web, les pratiques Craft (TDD, BDD, Clean Architecture…) et la gamification, avec près de 10 ans d'expérience.
+  Passionate full-stack developer specializing in web application development, Craft practices (TDD, BDD, Clean Architecture…), and gamification, with nearly 10 years of experience.
   
-  Ma stack de prédilection repose sur TypeScript, avec React en front et Node en back. J'ai aussi de l'expérience sur Angular et les back-ends Java, et je suis toujours curieux d'explorer d'autres technologies.
+  My preferred stack is based on TypeScript, primarily using React for the frontend and Node for the backend. I also have experience with Angular and Java backends, and I'm always eager to explore new technologies.
   
-  J'aime également encadrer et former des développeurs juniors pour les aider à monter en compétences.
-  
-  Contactez-moi !
+  I also enjoy mentoring and training junior developers to help them grow their skills.
 position: Senior Full Stack Developer
-years: 10 ans d'expérience
+years: 10 years of experience
 
 experience:
 - company: Pink Bean Studio
   position: Founder, Senior Full Stack Developer
-  timeperiod: Janvier 2022 - Aujourd'hui
+  timeperiod: January 2022 - Present
   description: |
-    Création du jeu web Worldle ayant atteint 3M de joueurs quotidiens
-    Création de Timeswipe.fun, jeu de trivia historique pour iOS, Android et Web
-    Prototypes de jeux et applications pour tester de nouveaux concepts
+    Created the web game Worldle, which reached 3M daily players
+    Developed Timeswipe.fun, a historical trivia game for iOS, Android, and Web
+    Built game and application prototypes to test new concepts
   techno: TS, React, Capacitor, Tailwind, Cloudflare, Supabase, PostgreSQL, Godot
 
 - company: folk
   position: Senior Full Stack Developer
-  timeperiod: Mars 2022 - Septembre 2023
+  timeperiod: March 2022 - September 2023
   description: |
-    Intégration Zapier & Imports contacts et mails depuis Microsoft Outlook
-    Système de templates pour faciliter la création de groupes de contacts
-    Ajout de pièces jointes et images dans les campagnes de mails
-    Vues publiques pour permettre le partage de listes de contacts
-    Refonte d'interfaces : Onboarding, Panneau de contact
-  techno: TS, React, NestJS, Graphql, PostgreSQL, Kafka, AWS, Terraform, GitLab CI
+    Integrated Zapier & Microsoft Outlook's contacts and emails imports
+    Developed a template system to simplify contact group creation
+    Added attachments and images to email campaigns
+    Created public views to allow contact list sharing
+    Redesigned interfaces: Onboarding, Contact Panel
+  techno: TS, React, NestJS, GraphQL, PostgreSQL, Kafka, AWS, Terraform, GitLab CI
 
 - company: CodinGame
   position: Full Stack Developer
-  timeperiod: Octobre 2019 - Septembre 2021
+  timeperiod: October 2019 - September 2021
   description: |
-    Refonte du système de souscription et amélioration de l'intégration Stripe
-    Développement d'escape-room virtuelles pour la plateforme CodingEscape
-    Mise en place connexion SAML sur la plateforme CodinGame For Work
-    Encadrement et formation de stagiaires
+    Revamped the subscription system and improved Stripe integration
+    Developed virtual escape rooms for the CodingEscape platform
+    Implemented SAML authentication on the CodinGame For Work platform
+    Mentored and trained interns
   techno: TypeScript, React, Express, TypeORM, GraphQL, Java, MyBatis, Guice, GitLab
 
 - company: OCTO Technology
   position: Full Stack Developer
-  timeperiod: Septembre 2017 - Septembre 2019
+  timeperiod: September 2017 - September 2019
   mission:
-    - client: Ministère de l'Intérieur
-      missiondescription: Système gestion des opérations des pompiers
+    - client: Ministry of the Interior
+      missiondescription: Firefighters' operations management system
       missiontechno: TypeScript, Node.js, hapi, Angular, Python, PuLP, GitLab CI, Docker
     - client: BNP Paribas
-      missiondescription: Refonte système de gestion des mouvements financiers
+      missiondescription: Financial transaction management system overhaul
       missiontechno: Java, Spring, Cassandra, Flink, GitLab CI, Docker, Kubernetes
     - client: Renault
-      missiondescription: Calculateur d'émission de CO2 des véhicules
+      missiondescription: Vehicle CO2 emissions calculator
       missiontechno: Java, Spring, JavaScript, jQuery, Oracle DB
 
 - company: Ubisoft Paris Mobile
   position: Gameplay Programmer
-  timeperiod: Avril 2015 - Mars 2017
-  description: Développement du jeu Smurfs Epic Run sur iOS/Android/AppleTV
+  timeperiod: April 2015 - March 2017
+  description: Developed the game Smurfs Epic Run on iOS/Android/Apple TV
 
 education:
-- degree: Certification Software Craftsmanship
+- degree: Software Craftsmanship Certification
   desc: 2018, OCTO Technology
   website: https://www.octo.academy/fr/parcours-formations/1-pratiques-du-developpement-logiciel-de-qualite
 
-- degree: Master Jeux et Media Numériques
+- degree: Master's in Games and Digital Media
   desc: 2015, ENJMIN
   website: https://enjmin.cnam.fr/
 
 - degree: BSc in Software Development
   desc: 2013, IT Carlow (IE)
-- degree: DUT Informatique
+- degree: DUT in Computer Science
   desc: 2012, IUT Le Havre
 
 skillcategories:
@@ -108,24 +106,24 @@ skillcategories:
     - name: Gradle
   - skills:
     - name: TDD
-    - name: Pair/Mob prog
+    - name: Pair/Mob Prog.
     - name: DDD
   - skills:
-    - name: Clean Archi
-    - name: Hexagonal Archi
+    - name: Clean Archi.
+    - name: Hexagonal Archi.
   - skills:
-    - name: Français
-    - name: Anglais
+    - name: French
+    - name: English
 
 hobbies:
-- name: Livres
-  description: A Psalm for the Wild Built, Circé, The Queen's Gambit
-- name: Jeux de Société
-  description: Échecs, Dominion, Trio, The Crew, Skull
+- name: Books
+  description: A Psalm for the Wild Built, Circe, The Queen's Gambit
+- name: Board Games
+  description: Chess, Dominion, Trio, The Crew, Skull
 
 contact:
   email: antoine.teuf@gmail.com
   phone: (+33)6 62 06 67 78
   linkedin: antoineteuf
-lang: fr
+lang: en
 `
