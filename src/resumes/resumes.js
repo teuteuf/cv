@@ -8,5 +8,5 @@
 // import './left-right-rtl.vue';
 // import './creative.vue';
 // import './cool.vue';
+// import './teuteuf-cool-printer-friendly.vue';
 import './teuteuf-cool.vue';
-import './teuteuf-cool-printer-friendly.vue';
