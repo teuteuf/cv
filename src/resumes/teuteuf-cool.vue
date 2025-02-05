@@ -3,6 +3,7 @@
     <div class="banner">
       <div class="banner__fullname">{{ person.name.first }} {{ person.name.last }}</div>
       <div class="banner__position">{{ person.position }}</div>
+      <div class="banner__years">{{ person.years }}</div>
     </div>
 
     <div class="content">
@@ -61,11 +62,9 @@
           </div>
           <div class="section-content section-content--plain">
             <span class="section-content__pre">{{ person.about }}</span>
-            <br/>
-            {{ person.knowledge }}
           </div>
         </div>
-
+        <br/>
         <div
           v-if="person.skillcategories"
           class="section">
@@ -236,6 +235,11 @@ a {
 
   &__position {
     font-size: 16px;
+  }
+
+  &__years {
+    margin-top: 4px;
+    font-size: 14px;
   }
 
   &__location {
