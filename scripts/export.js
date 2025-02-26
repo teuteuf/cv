@@ -31,7 +31,7 @@ const waitForServerReachable = () => {
             try {
                 const statusCode = await fetchResponse();
                 if (statusCode === 200) return true;
-            } catch (err) {}
+            } catch (err) { }
             return false;
         }),
         filter(ok => !!ok)
@@ -62,7 +62,7 @@ const convert = async () => {
                 waitUntil: 'networkidle2'
             });
             await page.pdf({
-                path: path.join(__dirname, '../pdf/' + dir.name + '.pdf'),
+                path: path.join(__dirname, '../pdf/CV_AntoineTEUF.pdf'),
                 format: 'A4'
             });
             await browser.close();
@@ -76,19 +76,19 @@ const convert = async () => {
 const getResumesFromDirectories = () => {
     const directories = getDirectories();
     return directories
-    .map(dir => {
-        const fileName = dir.replace('.vue', '');
-        return {
-            path: fileName,
-            name: fileName
-        };
-    });
+        .map(dir => {
+            const fileName = dir.replace('.vue', '');
+            return {
+                path: fileName,
+                name: fileName
+            };
+        });
 };
 
 const getDirectories = () => {
     const srcpath = path.join(__dirname, '../src/resumes');
     return fs.readdirSync(srcpath)
-    .filter(file => file !== 'resumes.js' && file !== 'template.vue' && file !== 'options.js');
+        .filter(file => file !== 'resumes.js' && file !== 'template.vue' && file !== 'options.js');
 };
 
 convert();

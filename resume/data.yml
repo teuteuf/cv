@@ -3,13 +3,11 @@ name:
   first: Antoine
   last: Teuf
 about: | 
-  Développeur full stack passionné, je cumule près de 10 ans d'expérience.
+  Développeur full stack passionné par le développement d'applications web, les pratiques Craft (TDD, BDD, Clean Architecture…) et la gamification, avec près de 10 ans d'expérience.
   
-  J'ai collaboré avec OCTO Technology (ESN experte en méthodes agiles), Ubisoft (acteur majeur du jeu vidéo) et folk (startup réinventant le CRM), acquérant une expertise en développement web et création de jeux vidéo.
+  Ma stack de prédilection repose sur TypeScript, avec React en front et Node en back. J'ai aussi de l'expérience sur Angular et les back-ends Java, et je suis toujours curieux d'explorer d'autres technologies.
   
-  J'encadre et forme aussi des développeurs.
-  
-  Polyvalent, j'interviens en développement, gamification, consulting ou formation.
+  J'aime également encadrer et former des développeurs juniors pour les aider à monter en compétences.
   
   Contactez-moi !
 position: Senior Full Stack Developer
@@ -126,7 +124,7 @@ hobbies:
   description: Échecs, Dominion, Trio, The Crew, Skull
 
 contact:
-  email: antoine@pinkbean.studio
+  email: antoine.teuf@gmail.com
   phone: (+33)6 62 06 67 78
   linkedin: antoineteuf
 lang: fr

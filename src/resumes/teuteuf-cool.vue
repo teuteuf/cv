@@ -167,7 +167,9 @@
       </div>
     </div>
 
+  <div class="picture-frame">
     <img class="picture"/>
+  </div>
   </div>
 </template>
 
@@ -181,8 +183,8 @@ export default Vue.component(name, getVueOptions(name));
 </script>
 
 <style lang="less" scoped>
-@accent-color: #0b2027;
-@banner-color: #40798c;
+@accent-color: #132043;
+@banner-color: #1F4172;
 @banner-height: 80px;
 @picture-size: 120px;
 @picture-offset: 35px;
@@ -206,6 +208,13 @@ a {
 }
 
 .picture {
+  content: url('../../resume/id.jpg');
+  width: calc(100% + 2px);
+}
+
+.picture-frame {
+  overflow: hidden;
+  background-color: @accent-color;
   position: absolute;
   top: @banner-height - @picture-offset;
   left: @left-column-width + @base-padding * 2 - @picture-size / 2;
@@ -213,7 +222,6 @@ a {
   width: @picture-size;
   border-radius: 50%;
   border: 5px solid @accent-color;
-  content: url('../../resume/id.jpg');
   z-index: 2;
 }
 
@@ -261,7 +269,7 @@ a {
 
   &__left {
     width: @left-column-width;
-    color: rgba(255, 255, 255, 0.59);
+    color: rgba(255, 255, 255, 0.75);
     background-color: @accent-color;
 
     .section-headline {
@@ -295,7 +303,7 @@ a {
 
 .section-link {
   font-size: 1.1em;
-  color: rgba(255, 255, 255, 0.59) !important;
+  color: rgba(255, 255, 255, 0.75) !important;
 
   &__icon {
     color: white;
