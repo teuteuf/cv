@@ -15,12 +15,12 @@ years: 10 ans d'expérience
 
 experience:
 - company: Pink Bean Studio
-  position: Founder, Full Stack Developer, Game Developer
+  position: Founder, Senior Full Stack Developer
   timeperiod: Janvier 2022 - Aujourd'hui
   description: |
     Création du jeu web Worldle ayant atteint 3M de joueurs quotidiens
     Création de Timeswipe.fun, jeu de trivia historique pour iOS, Android et Web
-    Réalisation de prototypes de jeux pour tester de nouveaux concepts
+    Prototypes de jeux et applications pour tester de nouveaux concepts
   techno: TS, React, Capacitor, Tailwind, Cloudflare, Supabase, PostgreSQL, Godot
 
 - company: folk
